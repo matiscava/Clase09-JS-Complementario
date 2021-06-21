@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Complementario - Clase 09</title>
+        
+        <link rel="stylesheet" href="css/estilos.css">
+        
+</head>
+<body>
+    <h1 class="titulo">DESAFIO COMPLEMENTARIO</h1>
+   <div class="contenedorBoton">
+    <button class="btnAgregar" onclick="cuestionarioTrue()">AGREGAR ITEM</button>   
+    <!-- <a href="agregar.html" class="btnAgregar">AGREGAR ITEM</a> -->
+   </div>
+   <div class="cuestionario">
+       <div class="cuestionario__pregunta">
+            <label for="item-imagen" class="cuestionario__label">Ingrese la imagen del vehiculo:</label><br>
+            <input type="url" class="cuestionario__input" id="item-imagen" placeholder="imagenes/imagen1.jpg o copiar el url:http://google.com/imagenes...">
+        </div>
+        <div class="cuestionario__pregunta">
+            <label for="item-alt" class="cuestionario__label">Ingrese la descripción de la imagen agregada:</label><br>
+            <input type="text" class="cuestionario__input" id="item-alt" placeholder="Descripcion de la imagen 1">
+        </div>
+        <div class="cuestionario__pregunta">
+            <label for="item-nombre" class="cuestionario__label">Ingrese marca y modelo del vehiculo:</label><br>
+            <input type="text" class="cuestionario__input" id="item-nombre" placeholder="Ford Fiesta, Renaul Megane, Volkswagen Gol">
+        </div>
+        <div class="cuestionario__pregunta">
+            <label for="item-descripcion" class="cuestionario__label">Ingrese la descripción del vehiculo:</label><br>
+            <input type="text" class="cuestionario__input" id="item-descripcion" placeholder="Vehiculo 5 puertas, color gris, direccion hidraulica">
+        </div>
+        <div class="cuestionario__pregunta">
+            <label for="item-precio" class="cuestionario__label">Ingrese el precio del vehiculo:</label><br>
+            <input type="number" class="cuestionario__input" id="item-precio" placeholder="Ingresar precio sin signo $ Ej.:150000">
+        </div>
+        <div class="contenedorBoton">
+            <input type="button" class="cuestionario__btn" value="Agregar y cerrar" onclick="agregarItem(),cuestionarioFalse()">
+            <input type="button" class="cuestionario__btn" value="Agregar Otro" onclick="agregarItem()">
+            <input type="button" class="cuestionario__btn" value="cerrar" onclick="cuestionarioFalse()">
+        </div>
+    </div>
+    <div class="galeria">
+
+    </div>
+    
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

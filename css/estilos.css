@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    text-align: center;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 10%;
+    flex-wrap: wrap;
+}
+.contenedor{
+    border: 4px solid rgb(255, 93, 242);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 3px rgb(255, 93, 242);
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 300px;
+    min-height: max-content;
+}
+.contenedor__imagen{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+}
+.contenedor__img{
+    height: 100%;
+    width: auto;
+}
+.contenedor__titulo{
+    margin: 11px 0;
+    font-size: 22px;
+    color: rgb(255, 93, 242);
+    font-family: monospace;
+}
+.contenedor__descripcion{
+    font-size: 17px;
+    font-family: sans-serif;
+    margin: 0 10px;
+}
+.contenedor__precio{
+    font-family: fantasy;
+    color: rgb(0, 149, 0);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 11px;
+}
+.contenedor__btn{
+    border: 2px solid rgb(255, 93, 242);
+    padding: 6px 12px;
+    font-family: fantasy;
+    color: rgb(255, 93, 242);
+    background-color: darkgray;
+    transition: 0.5s;
+}
+.contenedor__btn:hover{
+    cursor: pointer;
+    color:black;
+    background-color: blue;
+}
+
+.btnAgregar{
+    text-decoration: none;
+    padding: 8px;
+    background-color: lightgray;
+    border: 1px solid black;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    transition:0.3s;
+}
+.contenedorBoton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnAgregar:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+
+/*CUESTIONARIO*/
+
+.cuestionario{
+    padding: 10px;
+    display: none;
+}
+.cuestionario__pregunta{
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 5px;
+    background-color: rgb(113, 143, 179);
+    border: 1px solid rgb(51 70 93);
+}
+.cuestionario__label{
+    width: fit-content;
+}
+.cuestionario__input{
+    width: 90%;
+}
+.cuestionario__btn{
+    margin: 0 22px;
+}
